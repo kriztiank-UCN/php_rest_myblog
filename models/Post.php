@@ -32,7 +32,7 @@ class Post
             $this->table .
             ' p
                                 LEFT JOIN
-                                  categories c ON p.category_id = c.id
+                               categories c ON p.category_id = c.id
                                 ORDER BY
                                   p.created_at DESC';
 
@@ -44,4 +44,6 @@ class Post
 
         return $stmt;
     }
+
+  
 }
