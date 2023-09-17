@@ -1,3 +1,5 @@
+<!-- http://localhost/php_rest_myblog/api/post/read.php -->
+
 <?php
 // Headers
 header("Access-Control-Allow-Origin: *");
@@ -47,3 +49,4 @@ if ($num > 0) {
     // No Posts
     echo json_encode(["message" => "No Posts Found"]);
 }
+
